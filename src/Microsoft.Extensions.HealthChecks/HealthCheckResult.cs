@@ -8,7 +8,6 @@ namespace Microsoft.Extensions.HealthChecks
     public class HealthCheckResult : IHealthCheckResult
     {
         private static readonly IReadOnlyDictionary<string, object> _emptyData = new Dictionary<string, object>();
-
         public CheckStatus CheckStatus { get; }
         public IReadOnlyDictionary<string, object> Data { get; }
         public string Description { get; }
